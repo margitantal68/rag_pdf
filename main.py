@@ -44,7 +44,7 @@ if __name__ == '__main__':
     EN_DOCUMENT = "data/RAG_Evaluation_Survey.pdf"
     HU_DOCUMENT = "data/hatarozatok_249.pdf"
 
-    DOCUMENT = HU_DOCUMENT
+    DOCUMENT = EN_DOCUMENT
     print(f"Using document: {DOCUMENT}")
     qa_chain = setup_qa_system(DOCUMENT)
 
