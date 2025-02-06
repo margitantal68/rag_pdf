@@ -27,8 +27,8 @@ def setup_qa_system(file_path):
     llm = ChatOpenAI(temperature=0, model_name='gpt-4o')
 
     system_prompt = (
-    "Use the given context to answer the question. "
-    "If you don't know the answer, say you don't know. "
+    "Use only the given contexts to answer the question. "
+    "If the question cannot be answere by the givent contexts, say I don't know. "
     "Use three sentence maximum and keep the answer concise. "
     "Context: {context}"
     )
